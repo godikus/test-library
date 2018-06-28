@@ -1,0 +1,21 @@
+uuid: 453d2553-8a1e-4640-af41-6c352bc5067e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_osvitno_kvalifikaciyniy_ri
+    - node.type.diplomna_robota
+  module:
+    - options
+id: node.diplomna_robota.field_osvitno_kvalifikaciyniy_ri
+field_name: field_osvitno_kvalifikaciyniy_ri
+entity_type: node
+bundle: diplomna_robota
+label: 'Освітньо-кваліфікаційний рівень'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

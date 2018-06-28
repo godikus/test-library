@@ -1,0 +1,29 @@
+uuid: e42bd385-a258-4f8c-9c08-4469e6e0f1f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fakultettax
+    - node.type.diplomna_robota
+    - taxonomy.vocabulary.faculty
+id: node.diplomna_robota.field_fakultettax
+field_name: field_fakultettax
+entity_type: node
+bundle: diplomna_robota
+label: Факультет
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      faculty: faculty
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

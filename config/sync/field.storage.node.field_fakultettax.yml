@@ -1,0 +1,20 @@
+uuid: 1c423a19-f56c-4dad-87bc-fe51a9515b61
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_fakultettax
+field_name: field_fakultettax
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

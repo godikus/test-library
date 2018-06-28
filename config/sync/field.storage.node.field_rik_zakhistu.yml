@@ -1,0 +1,20 @@
+uuid: 6842f52a-048d-4888-9f9e-88faf3453fb3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rik_zakhistu
+field_name: field_rik_zakhistu
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

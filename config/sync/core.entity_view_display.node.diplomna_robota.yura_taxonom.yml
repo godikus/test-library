@@ -1,0 +1,133 @@
+uuid: 9c94ba01-f4a1-43ac-817b-370dd5c457c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.yura_taxonom
+    - field.field.node.diplomna_robota.body
+    - field.field.node.diplomna_robota.field_fakultettax
+    - field.field.node.diplomna_robota.field_fayl
+    - field.field.node.diplomna_robota.field_grupa
+    - field.field.node.diplomna_robota.field_kaf
+    - field.field.node.diplomna_robota.field_osvitno_kvalifikaciyniy_ri
+    - field.field.node.diplomna_robota.field_p_i_p_kerivnika
+    - field.field.node.diplomna_robota.field_p_i_p_studenta
+    - field.field.node.diplomna_robota.field_rik_zakhistu
+    - node.type.diplomna_robota
+  module:
+    - ds
+    - file
+    - options
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      content:
+        - langcode
+        - links
+        - field_p_i_p_studenta
+        - body
+        - field_kaf
+        - field_fakultettax
+        - field_osvitno_kvalifikaciyniy_ri
+        - field_grupa
+        - field_p_i_p_kerivnika
+        - field_rik_zakhistu
+        - field_fayl
+id: node.diplomna_robota.yura_taxonom
+targetEntityType: node
+bundle: diplomna_robota
+mode: yura_taxonom
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fakultettax:
+    weight: 4
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fayl:
+    weight: 9
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_grupa:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_kaf:
+    weight: 3
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_osvitno_kvalifikaciyniy_ri:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_p_i_p_kerivnika:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_i_p_studenta:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_rik_zakhistu:
+    weight: 8
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

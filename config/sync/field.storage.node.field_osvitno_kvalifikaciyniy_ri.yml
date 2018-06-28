@@ -1,0 +1,27 @@
+uuid: 6cce1317-1fd7-4fed-9aab-e460b87e5126
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_osvitno_kvalifikaciyniy_ri
+field_name: field_osvitno_kvalifikaciyniy_ri
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Бакалавр
+      label: Бакалавр
+    -
+      value: Магістр
+      label: Магістр
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

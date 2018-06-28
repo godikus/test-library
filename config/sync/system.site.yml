@@ -1,0 +1,14 @@
+uuid: f4d60d38-d7fe-499d-98a6-8d9b9777cbc3
+name: library
+mail: isoldikus@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /view-library
+admin_compact_mode: false
+weight_select_max: 100
+langcode: uk
+default_langcode: uk
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,34 @@
+uuid: 53f1f373-592f-4ea3-ba81-b83f2ca20db2
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.testmenu
+  module:
+    - system
+    - user
+  theme:
+    - boot1
+id: testmenu
+theme: boot1
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:testmenu'
+settings:
+  id: 'system_menu_block:testmenu'
+  label: testmenu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,10 @@
+uuid: 8a64b32c-52f7-4956-b5ab-155d8c783063
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.yura_taxonom
+label: yura-taxonom
+targetEntityType: node
+cache: true

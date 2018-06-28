@@ -1,0 +1,31 @@
+schemas:
+  bootstrap: 8000
+  boot1: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://lntu-library.com/themes/contrib/boot1/favicon.ico'
+  use_default: true
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  shapka: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+table_responsive: '-1'
+table: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+langcode: uk

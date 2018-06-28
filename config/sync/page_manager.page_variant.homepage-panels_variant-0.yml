@@ -1,0 +1,65 @@
+uuid: c9651828-2abe-4498-8d61-12bf7713dfd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.cont_diplomna_robota
+    - views.view.result_diplom
+    - views.view.view_result_faculty
+  module:
+    - panels
+    - views
+id: homepage-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    a0f8f3d1-4f02-4115-95ad-f67a5b0b2336:
+      id: 'views_block:result_diplom-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: 0
+      uuid: a0f8f3d1-4f02-4115-95ad-f67a5b0b2336
+      context_mapping: {  }
+    c04be11a-c9ca-4d5f-84dd-f72fc46f6af3:
+      id: 'views_block:view_result_faculty-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: second
+      weight: 0
+      uuid: c04be11a-c9ca-4d5f-84dd-f72fc46f6af3
+      context_mapping: {  }
+    683b55e8-9e7f-4409-a5e5-f1a730732483:
+      id: 'views_block:cont_diplomna_robota-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: -1
+      uuid: 683b55e8-9e7f-4409-a5e5-f1a730732483
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 7cb93532-eccb-4288-a349-0f14e3bff646
+  label: null
+  weight: 0
+  layout: layout_twocol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: standard
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

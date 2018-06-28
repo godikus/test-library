@@ -1,0 +1,103 @@
+uuid: 531f17ea-5c38-4a86-abcb-292b2485c665
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.diplomna_robota.body
+    - field.field.node.diplomna_robota.field_fakultettax
+    - field.field.node.diplomna_robota.field_fayl
+    - field.field.node.diplomna_robota.field_grupa
+    - field.field.node.diplomna_robota.field_kaf
+    - field.field.node.diplomna_robota.field_osvitno_kvalifikaciyniy_ri
+    - field.field.node.diplomna_robota.field_p_i_p_kerivnika
+    - field.field.node.diplomna_robota.field_p_i_p_studenta
+    - field.field.node.diplomna_robota.field_rik_zakhistu
+    - node.type.diplomna_robota
+  module:
+    - file
+    - options
+    - text
+    - user
+id: node.diplomna_robota.default
+targetEntityType: node
+bundle: diplomna_robota
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fakultettax:
+    weight: 4
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fayl:
+    weight: 9
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_grupa:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_kaf:
+    weight: 3
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_osvitno_kvalifikaciyniy_ri:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_p_i_p_kerivnika:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_p_i_p_studenta:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_rik_zakhistu:
+    weight: 8
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

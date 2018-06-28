@@ -1,0 +1,9 @@
+uuid: abc59a51-730b-460e-9f5f-2b0cd4ea00c9
+langcode: und
+status: true
+dependencies: {  }
+name: Faculty
+vid: faculty
+description: ''
+hierarchy: 0
+weight: 0

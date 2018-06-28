@@ -1,0 +1,18 @@
+uuid: c5508e70-e954-4a7c-914c-2f5d07b039a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kafedra
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.kafedra
+target_entity_type_id: taxonomy_term
+target_bundle: kafedra
+default_langcode: und
+language_alterable: true

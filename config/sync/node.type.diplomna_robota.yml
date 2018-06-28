@@ -1,0 +1,18 @@
+uuid: 34a26abe-c69d-49da-8242-e50d25e6fdc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Дипломна робота'
+type: diplomna_robota
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

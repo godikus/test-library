@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Застосувати
+      fields:
+        field_fayl:
+          alter:
+            text: "{{ field_p_i_p_studenta }} \r\n{{ body }} \r\n{{ field_kafedra }} \r\n{{ field_fakultet }} \r\n{{ field_osvitno_kvalifikaciyniy_ri }} \r\n{{ field_grupa }} \r\n{{ field_p_i_p_kerivnika }} \r\n{{ field_rik_zakhistu }} \r\n{{ field_fayl }}"

@@ -1,0 +1,22 @@
+uuid: 843c4394-23b0-4a83-afab-2b25b9a847b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.diplomna_robota
+  module:
+    - text
+id: node.diplomna_robota.body
+field_name: body
+entity_type: node
+bundle: diplomna_robota
+label: Тема
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

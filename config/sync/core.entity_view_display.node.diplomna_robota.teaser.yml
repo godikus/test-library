@@ -1,0 +1,95 @@
+uuid: 07a3208a-efa1-4fc7-9ea8-bfc8bb627fc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.diplomna_robota.body
+    - field.field.node.diplomna_robota.field_fakultettax
+    - field.field.node.diplomna_robota.field_fayl
+    - field.field.node.diplomna_robota.field_grupa
+    - field.field.node.diplomna_robota.field_kaf
+    - field.field.node.diplomna_robota.field_osvitno_kvalifikaciyniy_ri
+    - field.field.node.diplomna_robota.field_p_i_p_kerivnika
+    - field.field.node.diplomna_robota.field_p_i_p_studenta
+    - field.field.node.diplomna_robota.field_rik_zakhistu
+    - node.type.diplomna_robota
+  module:
+    - ds
+    - file
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol
+      library: layout_discovery/twocol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - field_p_i_p_studenta
+      first:
+        - field_grupa
+        - body
+      second:
+        - field_fayl
+      bottom:
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Читати далі'
+          'link class': ''
+          wrapper: ''
+          class: ''
+id: node.diplomna_robota.teaser
+targetEntityType: node
+bundle: diplomna_robota
+mode: teaser
+content:
+  body:
+    label: above
+    type: text_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: first
+  field_fayl:
+    type: file_default
+    weight: 3
+    region: second
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_grupa:
+    type: string
+    weight: 1
+    region: first
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_p_i_p_studenta:
+    type: string
+    weight: 0
+    region: top
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_fakultettax: true
+  field_kaf: true
+  field_osvitno_kvalifikaciyniy_ri: true
+  field_p_i_p_kerivnika: true
+  field_rik_zakhistu: true
+  langcode: true
+  links: true

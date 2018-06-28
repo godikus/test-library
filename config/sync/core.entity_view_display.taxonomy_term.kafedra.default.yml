@@ -1,0 +1,25 @@
+uuid: 797c4cea-d43a-4745-ad6f-260f1d28dd1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kafedra
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions: {  }
+id: taxonomy_term.kafedra.default
+targetEntityType: taxonomy_term
+bundle: kafedra
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

@@ -1,0 +1,29 @@
+uuid: fcd79849-dbc9-4bb3-87fa-df5d67b43e77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kaf
+    - node.type.diplomna_robota
+    - taxonomy.vocabulary.kafedra
+id: node.diplomna_robota.field_kaf
+field_name: field_kaf
+entity_type: node
+bundle: diplomna_robota
+label: Кафедра
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      kafedra: kafedra
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

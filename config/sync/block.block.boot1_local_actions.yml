@@ -1,0 +1,20 @@
+uuid: 867dd1af-e0c9-454b-bacf-f21e71cf8834
+langcode: en
+status: true
+dependencies:
+  theme:
+    - boot1
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: boot1_local_actions
+theme: boot1
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

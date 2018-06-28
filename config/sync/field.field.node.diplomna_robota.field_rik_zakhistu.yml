@@ -1,0 +1,23 @@
+uuid: 0f31513e-4d98-44b1-97ad-e43d00963be1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rik_zakhistu
+    - node.type.diplomna_robota
+id: node.diplomna_robota.field_rik_zakhistu
+field_name: field_rik_zakhistu
+entity_type: node
+bundle: diplomna_robota
+label: 'Рік захисту'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 2000
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

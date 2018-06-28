@@ -1,0 +1,19 @@
+uuid: 93e24cfc-d129-4885-ac9b-f6e8bf5bc448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grupa
+    - node.type.diplomna_robota
+id: node.diplomna_robota.field_grupa
+field_name: field_grupa
+entity_type: node
+bundle: diplomna_robota
+label: Група
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

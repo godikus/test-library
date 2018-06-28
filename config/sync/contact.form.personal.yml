@@ -1,0 +1,13 @@
+uuid: a8e9d9a7-aa9f-4aa4-a4b4-403e84434ab2
+langcode: uk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 'Personal contact form'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

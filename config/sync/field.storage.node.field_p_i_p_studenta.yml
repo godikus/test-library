@@ -1,0 +1,21 @@
+uuid: 32a2d30d-c4f9-4f7f-9a9c-cce238330fac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_p_i_p_studenta
+field_name: field_p_i_p_studenta
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

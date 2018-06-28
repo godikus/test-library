@@ -1,0 +1,18 @@
+uuid: 19b84c7f-d8d8-4bf5-8da0-353b44378c75
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.diplomna_robota
+id: node.diplomna_robota.title
+field_name: title
+entity_type: node
+bundle: diplomna_robota
+label: №
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

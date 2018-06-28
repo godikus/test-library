@@ -1,0 +1,25 @@
+uuid: 156d17e2-0262-4157-b7c7-5472de6933cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - boot1
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: boot1_branding
+theme: boot1
+region: navigation
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
